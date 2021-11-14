@@ -16,6 +16,13 @@ class MainActivity : AppCompatActivity() {
         Handler().postDelayed({
             startActivity(Intent(this, IntroActivity::class.java))
             finish()
-        }, 3000)
+        }, DELAY_TIME)
+    }
+
+
+    companion object {
+
+        private const val DELAY_TIME = 3000L
+
     }
 }
